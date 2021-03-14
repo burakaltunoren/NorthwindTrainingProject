@@ -24,7 +24,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("getall")]
-        public IActionResult GetAll()                   // kendi ressponse DEĞERİMİ set etmek için
+        public IActionResult GetAll()                   // kendi response DEĞERİMİ set etmek için
         {
             var result = _productService.GetAll();      // data'yı al ve result adlı değişkene aktar
             if (result.Success)                         // işlem sonucu true ise
